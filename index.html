@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chelsea's birthday &#127881;</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Secular+One&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="banner">
+      <img class="layer-1" src="gambar/bg.png" />
+      <img class="layer-2" src="gambar/meteor.png" />
+      <div class="layer-3">
+        <h1>Happy Birthday</h1>
+        <a href="#text">get started</a>
+      </div>
+      <img class="layer-4" src="gambar/4.png" />
+      <img class="layer-5" src="gambar/5.png" />
+      <img src="gambar/6.png" />
+    </div>
+    <div class="content" id="text">
+      <h1>Chelsea's Birthday</h1>
+      <p>
+        The day you were born was the best day of my life.<br />It may be your
+        birthday, but you are a gift to me.
+      </p>
+    </div>
+
+    <script type="text/javascript">
+      let layer_1 = document.querySelector(".layer-1");
+      let layer_2 = document.querySelector(".layer-2");
+      let layer_3 = document.querySelector(".layer-3");
+      let layer_4 = document.querySelector(".layer-4");
+      let layer_5 = document.querySelector(".layer-5");
+
+      window.onscroll = function () {
+        let Y = window.scrollY;
+        layer_1.style.transform = "translateY(" + Y / 1.5 + "px)";
+        layer_2.style.transform = "translateY(" + Y / 2 + "px)";
+        layer_3.style.transform = "translateY(" + Y / 1.5 + "px)";
+        layer_4.style.transform = "translateY(" + Y / 2 + "px)";
+        layer_5.style.transform = "translateY(" + Y / 3 + "px)";
+      };
+    </script>
+  </body>
+</html>

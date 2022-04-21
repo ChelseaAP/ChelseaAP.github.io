@@ -27,10 +27,12 @@
     </div>
     <div class="content" id="text">
       <h1>Chelsea's Birthday</h1>
-      <p>
+      <p id="demo">
         The day you were born was the best day of my life. It may be your
         birthday, but you are a gift to me. happy 24th birthday
       </p>
+      <br />
+      <button onclick="myFunction()">Translate dong</button>
     </div>
 
     <script type="text/javascript">
@@ -48,6 +50,12 @@
         layer_4.style.transform = "translateY(" + Y / 2 + "px)";
         layer_5.style.transform = "translateY(" + Y / 3 + "px)";
       };
+    </script>
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML =
+          "Hari dimana kamu dilahirkan adalah hari terbaik dalam hidupku. Ini mungkin hari ulang tahunmu, tapi kamu adalah hadiah dari tuhan yang diberikan untukku. selamat ulang tahun yang ke 24";
+      }
     </script>
   </body>
 </html>

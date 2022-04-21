@@ -84,6 +84,12 @@ p {
 }
 
 @media (orientation: portrait) {
+    button {
+    background-color: #1d1d4f;
+    color: white;
+    border: 0px;
+    margin-left: 13.5%;
+  }
   .banner {
     height: 75vh;
   }
